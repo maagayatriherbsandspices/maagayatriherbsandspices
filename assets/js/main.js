@@ -1,10 +1,3 @@
-Run on localhost
-
-cd D:\Pro\MaaGayatriHerbsAndSpices
-npx.cmd serve -1 8017
-y
-start http://127.0.0.1:8017/contact.html
-
 (function () {
   const config = window.MGH_CONFIG || {};
   const products = window.MGH_PRODUCTS || [];
@@ -89,9 +82,10 @@ start http://127.0.0.1:8017/contact.html
     target.textContent = config.recipientEmail || "Set your email in assets/js/config.js";
   });
 
+  // ==================== EMAILJS CONTACT FORM ====================
   const contactForm = document.querySelector("[data-contact-form]");
   if (contactForm) {
-    const recipient = config.recipientEmail || "";
+    const emailjsConfig = config.emailjs || {};
     const params = new URLSearchParams(window.location.search);
     const product = params.get("product");
     const form = params.get("form");
@@ -133,57 +127,52 @@ start http://127.0.0.1:8017/contact.html
       });
     }
 
-    if (recipient && !recipient.includes("example.com")) {
-      contactForm.action = `https://dashboard.emailjs.com/${recipient}`;
-      contactForm.method = "POST";
-
-      let iframe = document.querySelector("[data-contact-submit-frame]");
-      if (!iframe) {
-        iframe = document.createElement("iframe");
-        iframe.name = "contact-submit-frame";
-        iframe.hidden = true;
-        iframe.setAttribute("data-contact-submit-frame", "");
-        document.body.appendChild(iframe);
-      }
-      contactForm.target = iframe.name;
-
-      [
-        ["_subject", "Product enquiry from Maa Gayatri Herbs and Spices website"],
-        ["_captcha", "false"],
-        ["_template", "table"]
-      ].forEach(([name, value]) => {
-        let input = contactForm.querySelector(`input[name="${name}"]`);
-        if (!input) {
-          input = document.createElement("input");
-          input.type = "hidden";
-          input.name = name;
-          contactForm.appendChild(input);
-        }
-        input.value = value;
-      });
+    // Initialize EmailJS with your public key
+    if (window.emailjs && emailjsConfig.publicKey) {
+      window.emailjs.init({ publicKey: emailjsConfig.publicKey });
     }
 
+    // Prefill message from URL params
     if (product && messageInput) {
       messageInput.value = `I want to enquire about ${product}${form ? ` (${form})` : ""}.\n\n`;
     }
 
-    contactForm.addEventListener("submit", (event) => {
-      if (!recipient || recipient.includes("example.com")) {
-        event.preventDefault();
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      // Validate that EmailJS config exists and is complete
+      if (!window.emailjs || !emailjsConfig.publicKey || !emailjsConfig.serviceId || !emailjsConfig.templateId) {
         if (status) {
-          status.textContent = "Code fatt gya BC....";
+          status.textContent = "Please add your EmailJS public key, service ID, and template ID in assets/js/config.js.";
           status.classList.add("error");
         }
         return;
       }
 
       if (status) {
-        status.textContent = "";
+        status.textContent = "Sending enquiry...";
         status.classList.remove("error");
       }
 
-      openSuccessPopup();
-      window.setTimeout(() => contactForm.reset(), 250);
+      try {
+        await window.emailjs.sendForm(
+          emailjsConfig.serviceId,
+          emailjsConfig.templateId,
+          contactForm
+        );
+
+        if (status) {
+          status.textContent = "";
+        }
+        openSuccessPopup();
+        contactForm.reset();
+      } catch (error) {
+        console.error("EmailJS error:", error);
+        if (status) {
+          status.textContent = "Unable to send enquiry right now. Please try again.";
+          status.classList.add("error");
+        }
+      }
     });
   }
 }());

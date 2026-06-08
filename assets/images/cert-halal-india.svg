@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160" role="img" aria-labelledby="title">
+  <title id="title">Halal India certification logo</title>
+  <rect width="220" height="160" rx="18" fill="#ffffff"/>
+  <circle cx="110" cy="74" r="48" fill="none" stroke="#2f6b4f" stroke-width="5"/>
+  <path d="M61 73c18 16 36 23 54 21 19-2 34-13 44-34" fill="none" stroke="#d88b24" stroke-width="5" stroke-linecap="round"/>
+  <path d="M82 105c16 14 35 17 58 9" fill="none" stroke="#2f6b4f" stroke-width="5" stroke-linecap="round"/>
+  <text x="110" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="800" fill="#111315">HALAL</text>
+  <text x="110" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111315">halal</text>
+  <text x="110" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#2f6b4f">INDIA</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Spice enquiry visual</title>
+  <desc id="desc">A clean spice jar beside herbs and powdered spices.</desc>
+  <rect width="760" height="520" fill="#f4ecdc"/>
+  <rect x="88" y="84" width="238" height="340" rx="26" fill="#fffdf7"/>
+  <rect x="120" y="126" width="174" height="56" rx="12" fill="#111315"/>
+  <rect x="126" y="220" width="164" height="142" rx="70" fill="#d88b24"/>
+  <circle cx="515" cy="258" r="122" fill="#fffdf7"/>
+  <circle cx="515" cy="258" r="88" fill="#bb382f"/>
+  <path d="M390 378c86-83 193-98 268-60-75 55-155 78-268 60Z" fill="#2f6b4f"/>
+</svg>

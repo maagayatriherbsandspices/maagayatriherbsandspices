@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Co-Founder profile visual</title>
+  <desc id="desc">Premium profile illustration for the co-founder.</desc>
+  <rect width="520" height="520" rx="18" fill="#e8eddc"/>
+  <circle cx="260" cy="176" r="84" fill="#a96d48"/>
+  <path d="M130 456c20-102 86-166 130-166s110 64 130 166Z" fill="#2f6b4f"/>
+  <path d="M172 116c38-55 136-74 198 4-74-24-137-18-198-4Z" fill="#111315"/>
+  <path d="M90 382c126-56 246-61 360-14-103 35-222 62-360 14Z" fill="#bb382f" opacity=".7"/>
+  <circle cx="230" cy="168" r="9" fill="#111315"/>
+  <circle cx="290" cy="168" r="9" fill="#111315"/>
+  <path d="M226 214c24 17 48 17 72 0" fill="none" stroke="#111315" stroke-width="10" stroke-linecap="round"/>
+</svg>

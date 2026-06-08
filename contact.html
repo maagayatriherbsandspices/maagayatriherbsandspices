@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Maa Gayatri Herbs and Spices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/Maa_Gayatri_Logo.png">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/images/Maa_Gayatri_Logo.png" alt="" aria-hidden="true"><span>Maa Gayatri Herbs & Spices</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero image-page-hero reveal">
+      <p class="eyebrow">Contact us</p>
+      <h1>Send a product enquiry.</h1>
+      <p>Enter your details and message. The form will prepare an email enquiry addressed to Maa Gayatri Herbs and Spices.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form reveal" data-contact-form>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Mobile Number</span>
+          <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" required>
+        </label>
+        <label>
+          <span>Email Address</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="7" required placeholder="Mention product name, raw/powder form, quantity, and any other details."></textarea>
+        </label>
+        <button class="button primary form-button" type="submit">Send Enquiry</button>
+        <p class="form-note" data-form-status>We are happy to contact you.</p>
+      </form>
+
+      <aside class="contact-card reveal">
+        <img src="assets/images/nature-misty-forest.jpg" alt="Real misty forest nature wallpaper">
+        <h2>Maa Gayatri Herbs and Spices</h2>
+        <p>For product details, availability, raw form, powder form, and business enquiries, use the form and send your message directly.</p>
+        <div class="contact-mini">
+          <span>Our email address</span>
+          <strong data-recipient-email>Set in config.js</strong>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/images/Maa_Gayatri_Logo.png" alt="" aria-hidden="true"><span>Maa Gayatri Herbs and Spices</span></a>
+      <p>Jaipur, Rajasthan</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </div>
+  </footer>
+
+  <div class="success-popup" data-success-popup aria-hidden="true">
+    <div class="success-dialog" role="dialog" aria-modal="true" aria-labelledby="success-title">
+      <div class="success-icon" aria-hidden="true"></div>
+      <h2 id="success-title">Thank you for contacting us, we will reach out you soon.</h2>
+      <button class="button primary" type="button" data-success-close>OK</button>
+    </div>
+  </div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

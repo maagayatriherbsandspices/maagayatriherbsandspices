@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Herbs and spices arrangement</title>
+  <desc id="desc">A premium arrangement of spice bowls, green herbs, and whole spices.</desc>
+  <rect width="900" height="900" fill="#f5efe1"/>
+  <circle cx="228" cy="220" r="150" fill="#fffdf7"/>
+  <circle cx="228" cy="220" r="112" fill="#df9127"/>
+  <circle cx="650" cy="250" r="135" fill="#fffdf7"/>
+  <circle cx="650" cy="250" r="98" fill="#b93a2f"/>
+  <circle cx="438" cy="545" r="178" fill="#fffdf7"/>
+  <circle cx="438" cy="545" r="132" fill="#c6a35a"/>
+  <path d="M548 586c118-19 206 24 233 58-92 9-182-13-233-58Z" fill="#2f6b4f"/>
+  <path d="M574 634c83 9 142 54 155 87-68-10-124-35-155-87Z" fill="#477d5d"/>
+  <g fill="#5c3b24">
+    <ellipse cx="230" cy="652" rx="18" ry="55" transform="rotate(-43 230 652)"/>
+    <ellipse cx="272" cy="682" rx="18" ry="55" transform="rotate(-49 272 682)"/>
+    <ellipse cx="318" cy="704" rx="18" ry="55" transform="rotate(-56 318 704)"/>
+  </g>
+  <g fill="#263e2e">
+    <ellipse cx="198" cy="456" rx="32" ry="84" transform="rotate(34 198 456)"/>
+    <ellipse cx="258" cy="424" rx="30" ry="78" transform="rotate(60 258 424)"/>
+    <ellipse cx="315" cy="406" rx="28" ry="72" transform="rotate(82 315 406)"/>
+  </g>
+  <g fill="#ffffff" opacity=".38">
+    <circle cx="184" cy="174" r="22"/>
+    <circle cx="606" cy="206" r="18"/>
+    <circle cx="376" cy="482" r="24"/>
+  </g>
+</svg>

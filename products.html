@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Maa Gayatri Herbs & Spices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/Maa_Gayatri_Logo.png">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/images/Maa_Gayatri_Logo.png" alt="" aria-hidden="true"><span>Maa Gayatri Herbs & Spices</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero products-visual-hero reveal">
+      <p class="eyebrow">Our product range</p>
+      <h1>Raw and powder herbs & spices.</h1>
+      <p>Browse our showcase range. This page is intentionally enquiry-only and made for direct product communication.</p>
+    </section>
+
+    <section class="product-showcase-banner reveal">
+      <img src="assets/images/nature-moss-sapling.jpg" alt="Real nature wallpaper with forest moss and fresh growth">
+      <div>
+        <p class="eyebrow">Visual catalogue</p>
+        <h2>Product images made for quick recognition.</h2>
+        <p>Use the filters below to view raw materials, powders, herbs, and spices with direct enquiry links.</p>
+      </div>
+    </section>
+
+    <section class="section filter-section">
+      <div class="filter-bar reveal" aria-label="Product filters">
+        <button class="filter-chip active" type="button" data-filter="all">All</button>
+        <button class="filter-chip" type="button" data-filter="Raw">Raw</button>
+        <button class="filter-chip" type="button" data-filter="Powder">Powder</button>
+        <button class="filter-chip" type="button" data-filter="Herbs">Herbs</button>
+        <button class="filter-chip" type="button" data-filter="Spices">Spices</button>
+      </div>
+      <div class="product-grid" data-products></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/images/Maa_Gayatri_Logo.png" alt="" aria-hidden="true"><span>Maa Gayatri Herbs and Spices</span></a>
+      <p>Jaipur, Rajasthan</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

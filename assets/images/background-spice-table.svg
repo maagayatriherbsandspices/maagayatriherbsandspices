@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Spice table background</title>
+  <desc id="desc">A wide premium background with bowls of spices, herbs, seeds, and warm natural texture.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#fff7e7"/>
+      <stop offset=".55" stop-color="#ead8b5"/>
+      <stop offset="1" stop-color="#c8a167"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <path d="M0 640c220-70 395-62 590 0 244 77 466 62 674-15 132-49 244-64 336-52v327H0Z" fill="#6b4c2f" opacity=".24"/>
+  <g opacity=".96">
+    <circle cx="255" cy="620" r="150" fill="#fffaf0"/>
+    <circle cx="255" cy="620" r="112" fill="#d88b24"/>
+    <circle cx="596" cy="590" r="128" fill="#fffaf0"/>
+    <circle cx="596" cy="590" r="94" fill="#bb382f"/>
+    <circle cx="945" cy="642" r="158" fill="#fffaf0"/>
+    <circle cx="945" cy="642" r="118" fill="#c7a35a"/>
+    <circle cx="1284" cy="600" r="132" fill="#fffaf0"/>
+    <circle cx="1284" cy="600" r="96" fill="#8c6338"/>
+  </g>
+  <g fill="#2f6b4f">
+    <path d="M570 337c124-83 259-86 363-25-109 51-222 70-363 25Z"/>
+    <path d="M1042 351c112-72 240-70 335-16-103 46-203 60-335 16Z"/>
+    <path d="M213 346c94-82 204-102 291-65-89 57-177 81-291 65Z"/>
+  </g>
+  <g fill="#5b3a24" opacity=".95" filter="url(#soft)">
+    <ellipse cx="420" cy="760" rx="20" ry="98" transform="rotate(-67 420 760)"/>
+    <ellipse cx="500" cy="795" rx="18" ry="90" transform="rotate(-72 500 795)"/>
+    <ellipse cx="1120" cy="778" rx="20" ry="102" transform="rotate(62 1120 778)"/>
+    <ellipse cx="1210" cy="754" rx="18" ry="96" transform="rotate(54 1210 754)"/>
+  </g>
+  <rect width="1600" height="900" fill="#111315" opacity=".12"/>
+</svg>

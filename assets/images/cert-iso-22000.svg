@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160" role="img" aria-labelledby="title">
+  <title id="title">ISO 22000 certification logo</title>
+  <rect width="220" height="160" rx="18" fill="#ffffff"/>
+  <circle cx="110" cy="72" r="44" fill="none" stroke="#1e6aad" stroke-width="5"/>
+  <path d="M70 72h80M110 28c17 17 25 35 25 54s-8 29-25 34M110 28c-17 17-25 35-25 54s8 29 25 34" fill="none" stroke="#1e6aad" stroke-width="3"/>
+  <path d="M81 48c12 7 26 10 42 9 8 0 16-2 26-6M81 96c13-6 28-9 45-7 8 1 16 3 26 7" fill="none" stroke="#1e6aad" stroke-width="3"/>
+  <text x="110" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="39" font-weight="800" fill="#1e6aad">ISO</text>
+  <text x="110" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#1e6aad">22000</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 680" role="img" aria-labelledby="title desc">
+  <title id="title">Clean herbs and spices showcase</title>
+  <desc id="desc">A table with herbs, spices, jars, and raw botanical ingredients.</desc>
+  <rect width="980" height="680" fill="#f6efe1"/>
+  <rect x="72" y="78" width="836" height="524" rx="8" fill="#fffdf8"/>
+  <circle cx="255" cy="260" r="118" fill="#e09a2b"/>
+  <circle cx="520" cy="250" r="104" fill="#b83a31"/>
+  <circle cx="725" cy="390" r="128" fill="#c8a55f"/>
+  <path d="M198 470c88-88 196-111 277-82-81 66-178 95-277 82Z" fill="#2f6b4f"/>
+  <path d="M315 536c72-60 158-72 218-43-66 42-133 58-218 43Z" fill="#4d8063"/>
+  <g fill="#5b3a23">
+    <rect x="540" y="415" width="26" height="128" rx="13" transform="rotate(54 553 479)"/>
+    <rect x="584" y="438" width="26" height="128" rx="13" transform="rotate(61 597 502)"/>
+    <rect x="625" y="461" width="26" height="128" rx="13" transform="rotate(68 638 525)"/>
+  </g>
+</svg>
